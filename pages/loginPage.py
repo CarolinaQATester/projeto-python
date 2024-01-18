@@ -15,3 +15,6 @@ class LoginPages(BasePage):
         
         btn_login = self.driver.find_element(LoginLocators.BTN_LOGIN)
         btn_login.click()
+        
+    def deve_validar_titulo(self):
+        return self.driver.find_element(LoginLocators.TITULO)
